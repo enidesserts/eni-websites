@@ -5,19 +5,17 @@
   align-items: center;
   height: 100%;
   width: 100%;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-.background {
   background-image: url('/public/Cream.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  position: relative; /* Make the div a positioning context for the SVG */
+  position: relative; 
   width: 100%;
+}
+
+.App-link {
+  color: #61dafb;
 }
 
 .svg-overlay {

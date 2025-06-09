@@ -10,7 +10,6 @@ function App() {
     width: '100%', // Full width
   };
   return (
-    <div  style={style}>
       <div className="landing-page-container">
         <img
           src="/eni_logo.svg"
@@ -19,7 +18,6 @@ function App() {
         />
         <p>Coming soon | Follow our journey on @eni.desserts</p>
       </div>
-    </div>
   );
 }
 
