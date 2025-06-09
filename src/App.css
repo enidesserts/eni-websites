@@ -26,6 +26,7 @@
 
 .hyperlink{
   text-decoration: none;
+  color: inherit;
 }
 
 .hyperlink:visited {
