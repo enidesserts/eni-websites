@@ -9,10 +9,10 @@ function App() {
           alt="Logo"
           className="svg-overlay"
         />
-        <p>
+        <div className="landing-page-body">
           Coming soon | Follow our journey on
           <a className="hyperlink" href='https://www.instagram.com/eni.desserts/'> @eni.desserts</a>
-        </p>
+        </div>
       </div>
   );
 }
