@@ -21,4 +21,13 @@
 .svg-overlay {
   width: 70%; 
   height: auto;
+  padding-bottom: 1rem;
+}
+
+.hyperlink{
+  text-decoration: none;
+}
+
+.hyperlink:visited {
+  color: inherit;
 }
