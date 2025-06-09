@@ -10,7 +10,7 @@ function App() {
           className="svg-overlay"
         />
         <div className="landing-page-body">
-          Coming soon | Follow our journey on
+          coming soon...follow our journey on
           <a className="hyperlink" href='https://www.instagram.com/eni.desserts/'> @eni.desserts</a>
         </div>
       </div>

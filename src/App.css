@@ -16,6 +16,7 @@
 
 .landing-page-body {
   text-align: center;
+  font-weight: 300;
 }
 
 .App-link {
@@ -23,9 +24,9 @@
 }
 
 .svg-overlay {
-  width: 70%; 
+  width: 50%; 
   height: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 5rem;
 }
 
 .hyperlink {
@@ -35,4 +36,20 @@
 
 .hyperlink:visited {
   color: inherit;
+}
+
+@media (max-width:480px) {
+  .svg-overlay {
+    width: 90%; 
+  }
+
+  .landing-page-body {
+    text-align: center;
+    font-weight: 300;
+    padding: 0 1.5rem;
+  }
+
+  .svg-overlay {
+    padding-bottom: 2rem;
+  }
 }
