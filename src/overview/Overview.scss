@@ -1,0 +1,19 @@
+.overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../public/Cream.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative; 
+    width: 100%;
+    .overview-body{
+        text-align: center;
+        font-weight: 300;
+    }
+}
