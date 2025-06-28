@@ -6,6 +6,7 @@ import { CakeFeatures } from "./cakefeatures/CakeFeatures";
 import { Location } from "./location/Location";
 import { CookieFeatures } from "./cookiefeatures/CookieFeatures";
 import { ContactUs } from "./contact/ContactUs";
+import { OrderButton } from "./components/OrderButton";
 
 export function Main(){
     return(
@@ -24,6 +25,8 @@ export function Main(){
             <Divider/>
             <ContactUs/>
             <Divider/>
+
+            <OrderButton/>
         </div>
     );
 }

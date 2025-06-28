@@ -1,0 +1,22 @@
+.floating-order-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0) rotate(10deg);
+        }
+        50% {
+            transform: translateY(-8px) rotate(10deg);
+        }
+    }
+    .image{
+        width: 7rem;
+        transform: rotate(10deg);
+        animation: float 2.5s ease-in-out infinite;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    }
+}
