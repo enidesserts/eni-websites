@@ -5,7 +5,6 @@ import { useRef, useState, useEffect, ReactNode } from 'react';
 export function Divider({titleElement}:{titleElement?: ReactNode}){
     const dividerRef = useRef<HTMLDivElement>(null);
     const [height, setHeight] = useState(0);
-    const [width, setWidth] = useState(0);
 
     // Since we aren't sure how tall the divider is, we need to dynamically fetch
     // the height of the divider in order to set a negative margin on it
@@ -14,7 +13,6 @@ export function Divider({titleElement}:{titleElement?: ReactNode}){
         const resizeObserver = new ResizeObserver(() => {
         if (element) {
             setHeight(element.getBoundingClientRect().height);
-            setWidth(element.getBoundingClientRect().height)
         }
         });
 
@@ -25,7 +23,7 @@ export function Divider({titleElement}:{titleElement?: ReactNode}){
         return () => {
             resizeObserver.disconnect();
         };
-    }, [dividerRef, setHeight, setWidth]);
+    }, [dividerRef, setHeight]);
 
     return(
         <div ref={dividerRef} className="divider" style={{margin: `-${height/2}px 0px`}}>
