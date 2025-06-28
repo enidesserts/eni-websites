@@ -1,17 +1,16 @@
 import './App.scss';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { LandingPage } from './temp/LandingPage';
 import { Main } from './Main';
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<LandingPage/>}/>
           <Route path="/beta" element={<Main/>}/>
-          <Route path="/*" element={<LandingPage/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
