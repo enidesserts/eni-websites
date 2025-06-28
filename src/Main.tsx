@@ -3,6 +3,7 @@ import { Divider } from "./components/Divider";
 import { AboutUs } from "./aboutus/AboutUs";
 import { TopBar } from "./TopBar";
 import { CakeFeatures } from "./cakefeatures/CakeFeatures";
+import { Location } from "./location/Location";
 
 export function Main(){
     return(
@@ -14,6 +15,8 @@ export function Main(){
             <AboutUs/>
             <Divider titleElement={<div style={{color: '#9DB652'}}>JUNE CAKE FEATURES</div>}/>
             <CakeFeatures/>
+            <Divider/>
+            <Location/>
         </div>
     );
 }
