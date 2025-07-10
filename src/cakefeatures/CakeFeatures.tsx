@@ -1,5 +1,27 @@
+import {Slideshow, SlideshowItem} from '../components/Slideshow';
 import './CakeFeatures.scss';
 
 export function CakeFeatures() {
-  return <div className="cake-features">Coming soon</div>;
+  const items: SlideshowItem[] = [
+    {
+      title: 'Placeholder',
+      imagePath: './GreenGrapeCake.png',
+      colour: '#C4D87C',
+    },
+    {
+      title: 'Placeholder',
+      imagePath: './GreenGrapeCake.png',
+      colour: '#C4D87C',
+    },
+    {
+      title: 'Placeholder',
+      imagePath: './GreenGrapeCake.png',
+      colour: '#C4D87C',
+    },
+  ];
+  return (
+    <div className="cake-features">
+      <Slideshow items={items} />
+    </div>
+  );
 }
