@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  position: relative; 
+  position: relative;
   width: 100%;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .svg-overlay {
-  width: 50%; 
+  width: 50%;
   height: auto;
   padding-bottom: 5rem;
 }
@@ -38,9 +38,9 @@
   color: inherit;
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
   .svg-overlay {
-    width: 90%; 
+    width: 90%;
   }
 
   .landing-page-body {

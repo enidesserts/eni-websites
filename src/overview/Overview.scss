@@ -1,19 +1,19 @@
-.overview{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: last baseline;
-    height: 50rem;
-    width: 100%;
+.overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: last baseline;
+  height: 50rem;
+  width: 100%;
 
-    background-image: url('../../public/Cream.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url('../../public/Cream.jpg');
+  background-size: cover;
+  background-position: center;
 
-    .content{
-        padding: 15rem 8rem;
-        font-weight: 300;
-        font-size: 40px;
-        line-height: 50px;
-    }
+  .content {
+    padding: 15rem 8rem;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
