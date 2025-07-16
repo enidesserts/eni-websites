@@ -4,7 +4,9 @@
   padding: 4rem;
   display: flex;
   flex-direction: row;
-
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   .item-container{
     // TODO: This component doesn't scale well, maybe it doesn't need to? This size works for
     //  both mobile and computer
