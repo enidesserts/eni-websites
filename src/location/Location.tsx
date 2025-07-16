@@ -1,8 +1,9 @@
+import {Card} from '../components/Card';
 import './Location.scss';
 
 export function Location() {
   return (
-    <div className="location">
+    <Card className="location" backgroundColour="#efe8df">
       {/* TODO: Add google maps embed */}
       <div className="map-section"></div>
       <div className="description-section">
@@ -25,6 +26,6 @@ export function Location() {
           </li>
         </ul>
       </div>
-    </div>
+    </Card>
   );
 }
