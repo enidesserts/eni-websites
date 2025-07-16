@@ -7,6 +7,22 @@
   display: flex;
   flex-direction: column;
 
+  .svg-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .frosting {
+    width: 100%;
+    // The same height as the svg, This height is important as other components need to know how much to adjust by
+    height: 172px;
+    background-image: url('../../public/Divider.svg');
+    background-repeat: repeat-x;
+    background-position: center center; // This centers the pattern, causing truncation from both ends
+    background-size: auto 100%;
+  }
+
   .divider-title {
     margin: 0;
     // Center both vertically and horizontally

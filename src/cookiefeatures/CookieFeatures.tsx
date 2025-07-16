@@ -1,5 +1,10 @@
+import {Card} from '../components/Card';
 import './CookieFeatures.scss';
 
 export function CookieFeatures() {
-  return <div className="cookie-features">Coming soon</div>;
+  return (
+    <Card className="cookie-features" backgroundColour="#ea7e42s">
+      Coming soon
+    </Card>
+  );
 }

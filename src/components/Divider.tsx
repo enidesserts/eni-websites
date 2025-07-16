@@ -26,7 +26,7 @@ export function Divider({titleElement}: {titleElement?: ReactNode}) {
 
   return (
     <div ref={dividerRef} className="divider" style={{margin: `-${height / 2}px 0px`}}>
-      <img src="/Divider.svg" alt="divider" className="frosting" />
+      <div className="svg-container frosting" />
       <div className="divider-title">{titleElement}</div>
     </div>
   );
