@@ -8,7 +8,6 @@ export interface SlideshowItem {
 }
 
 export function Slideshow({items}: {items: SlideshowItem[]}) {
-  const [currentIndex, setCurrentIndex] = useState(0);
   // TODO: Add buttons to cycle through the ovals
   return (
     <div className="slideshow">
