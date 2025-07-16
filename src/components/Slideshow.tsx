@@ -1,5 +1,4 @@
 import './Slideshow.scss';
-import {useState} from 'react';
 
 export interface SlideshowItem {
   title: string;
