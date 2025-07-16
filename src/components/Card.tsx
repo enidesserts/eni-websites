@@ -5,10 +5,12 @@ import './Card.scss';
 export function Card({
   children,
   className,
+  backgroundColour,
   backgroundImagePath,
 }: {
   children: React.ReactNode;
   className?: string;
+  backgroundColour?: string;
   backgroundImagePath?: string;
 }) {
   return (
@@ -19,6 +21,9 @@ export function Card({
           backgroundImage: `url(${backgroundImagePath})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+        }),
+        ...(backgroundColour && {
+          backgroundColor: backgroundColour,
         }),
       }}
     >
