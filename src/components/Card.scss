@@ -1,0 +1,10 @@
+.card{
+    height: 50rem;
+    // The top and bottom paddings are exactly 86px to accomodate the
+    padding: 86px 0;
+
+    .card-content{
+        height: 100%;
+        width: 100%;
+    }
+}
