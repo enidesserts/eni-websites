@@ -1,8 +1,9 @@
+import {Card} from '../components/Card';
 import './ContactUs.scss';
 
 export function ContactUs() {
   return (
-    <div className="contact-us">
+    <Card className="contact-us" backgroundColour="#efe8df">
       <div className="description-section">
         <br />
         <br />
@@ -22,6 +23,6 @@ export function ContactUs() {
       <div className="logo-section">
         <img src="/eni_logo.svg" alt="Logo" className="logo" />
       </div>
-    </div>
+    </Card>
   );
 }
