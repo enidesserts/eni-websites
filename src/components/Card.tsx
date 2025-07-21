@@ -27,7 +27,7 @@ export function Card({
         }),
       }}
     >
-      <div className={`card-content ${className}`}>{children}</div>
+      <div className={className}>{children}</div>
     </div>
   );
 }
