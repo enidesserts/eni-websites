@@ -1,3 +1,4 @@
+import {Divider} from './Divider';
 import './TopBar.scss';
 
 export function TopBar() {
@@ -6,6 +7,7 @@ export function TopBar() {
       <div className="header-content">
         <img src="/eni_logo.svg" alt="Logo" className="logo" />
       </div>
+      <Divider />
     </div>
   );
 }

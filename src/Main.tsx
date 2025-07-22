@@ -12,7 +12,6 @@ export function Main() {
   return (
     <div className="main">
       <TopBar />
-      <Divider />
       <Overview />
       <Divider />
       <AboutUs />
