@@ -1,7 +1,7 @@
 import './Divider.scss';
 import {useRef, useState, useEffect, ReactNode} from 'react';
 
-export function Divider({titleElement}: {titleElement?: ReactNode}) {
+export function Divider({titleElement, isLast}: {titleElement?: ReactNode; isLast?: boolean}) {
   const dividerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
 
@@ -25,8 +25,12 @@ export function Divider({titleElement}: {titleElement?: ReactNode}) {
   }, [dividerRef, setHeight]);
 
   return (
-    <div ref={dividerRef} className="divider" style={{margin: `-${height / 2}px 0px`}}>
-      <div className="svg-container frosting" />
+    <div
+      ref={dividerRef}
+      className={`divider ${isLast && 'last'}`}
+      style={{margin: `-${height / 2}px 0px`}}
+    >
+      <div className={`svg-container ${!isLast ? 'frosting' : 'bottom-frosting'}`} />
       <div className="divider-title">{titleElement}</div>
     </div>
   );

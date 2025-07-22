@@ -7,20 +7,30 @@
   display: flex;
   flex-direction: column;
 
+  &.last {
+    // Half the height of the actual svg so that we only show the top part
+    height: 86px;
+    overflow: hidden;
+  }
+
   .svg-container {
     width: 100%;
     overflow: hidden;
     position: relative;
-  }
-
-  .frosting {
-    width: 100%;
-    // The same height as the svg, This height is important as other components need to know how much to adjust by
-    height: 172px;
     background-image: url('../../public/Divider.svg');
     background-repeat: repeat-x;
     background-position: center center; // This centers the pattern, causing truncation from both ends
     background-size: auto 100%;
+  }
+
+  .frosting {
+    // The same height as the svg, This height is important as other components need to know how much to adjust by
+    height: 172px;
+  }
+
+  .bottom-frosting {
+    height: 172px;
+    flex-shrink: 0;
   }
 
   .divider-title {

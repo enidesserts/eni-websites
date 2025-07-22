@@ -24,7 +24,7 @@ export function Main() {
       <CookieFeatures />
       <Divider />
       <ContactUs />
-      <Divider />
+      <Divider isLast />
 
       <OrderButton />
     </div>
