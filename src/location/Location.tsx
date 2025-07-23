@@ -1,31 +1,36 @@
-import {Card} from '../components/Card';
 import './Location.scss';
 
 export function Location() {
   return (
-    <Card className="location" backgroundColour="#efe8df">
-      {/* TODO: Add google maps embed */}
-      <div className="map-section"></div>
-      <div className="description-section">
-        <ul>
-          Please read before ordering: <br />
-          <br />
-          <br />
-          <li>
-            Retail shop pickups Saturday & Sunday
-            <br />
-            <br />
-          </li>
-          <li>
-            Preorder cutoff is Wednesdayat 12pm for weekend orders
-            <br />
-            <br />
-          </li>
-          <li>
-            Contact us via phone call or Instagram for ordering aftercut off time or same-day pickup
-          </li>
-        </ul>
+    // We can't use the Card component here as we want to image to be covered by the divider
+    <div className="location">
+      <div className="map-section">
+        <img src="/Map.png" alt="Logo" className="logo" />
       </div>
-    </Card>
+      <div className="description-section">
+        <p>
+          Eni Desserts is open <strong>Sat & Sun</strong>
+          <br />
+          between <strong>11am-3pm</strong> at{' '}
+          <strong className="underline">417 Industrial Ave.</strong>
+        </p>
+
+        <p>
+          Preorders are strongly encouraged, but we will have some selection available in store.
+        </p>
+
+        <p>
+          Please contact us via{' '}
+          <a className="underline hyperlink" href="https://www.instagram.com/eni.desserts/">
+            Instagram DM
+          </a>{' '}
+          or{' '}
+          <a className="underline hyperlink" href="mailto:eni.desserts@gmail.com ">
+            email
+          </a>{' '}
+          for day-of inquiries.
+        </p>
+      </div>
+    </div>
   );
 }
