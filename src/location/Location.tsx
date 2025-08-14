@@ -4,9 +4,6 @@ export function Location() {
   return (
     // We can't use the Card component here as we want to image to be covered by the divider
     <div className="location">
-      <div className="map-section">
-        <img src="/Map.png" alt="Logo" className="logo" />
-      </div>
       <div className="description-section">
         <p>
           Eni Desserts is open <strong>Sat & Sun</strong>
@@ -30,6 +27,9 @@ export function Location() {
           </a>{' '}
           for day-of inquiries.
         </p>
+      </div>
+      <div className="map-section">
+        <img src="/Map.png" alt="Logo" className="logo" />
       </div>
     </div>
   );
