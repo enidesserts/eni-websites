@@ -1,145 +1,154 @@
-.menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .menu-table{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-        padding: 3rem;
-    
-        @media (max-width: 400px) {
-            grid-template-columns: 1fr;
-        }
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-        .title{
-            grid-column: 1 / -1; 
-            border: 2px solid black;
-            border-radius: 10px 10px 0 0;
-            border-bottom: none;
+  .menu-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-            font-weight: 300;
-            font-size: 45px;
-            line-height: 100%;
+    padding: 3rem;
 
-            padding: 30px;
-        }
-        .footer {
-            grid-column: 1 / -1; // span all columns
-            font-weight: bold;
-            text-align: center;
-            border: 2px solid black;
-            border-top: none;
-            border-radius: 0 0 10px 10px;
-
-            .footer-cell{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-
-                max-height: 300px;
-                .item-description{
-                    flex:3;
-                    padding: 10px;
-                    text-align: left;
-
-                    font-weight: 300;
-                    font-size: 24px;
-                    line-height: 100%;
-                }
-
-                .item-image{
-                    flex:2;
-                    padding: 10px;
-
-                    img{
-                        max-height: 300px;
-                        max-width: 100%;
-                        object-fit: contain;
-                    }
-                }
-            }
-        }
+    @media (max-width: 400px) {
+      grid-template-columns: 1fr;
     }
-    .menu-item{
+
+    .title {
+      grid-column: 1 / -1;
+      border: 2px solid black;
+      border-radius: 10px 10px 0 0;
+      border-bottom: none;
+
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 100%;
+
+      padding: 30px;
+    }
+
+    .footer {
+      grid-column: 1 / -1; // span all columns
+      font-weight: bold;
+      text-align: center;
+      border: 2px solid black;
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+
+      .footer-cell {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: stretch;
-        height: 100%;
-        border-left: 2px solid black;
-        border-top: 2px solid black;
+        align-items: center;
 
+        max-height: 300px;
 
-        &.without-footer{
-            &:nth-last-child(2 of .menu-item) {
-                border-radius: 0 0 0 10px;            
-            }
-            &:nth-last-child(1 of .menu-item) {
-                border-radius: 0 0 10px 0;            
-            }
+        .item-description {
+          flex: 3;
+          padding: 10px;
+          text-align: left;
 
-            @media (max-width: 400px) {
-                &:nth-last-child(-n + 2 of .menu-item) {
-                    border-radius: 0;            
-                }   
-
-                &:nth-last-child(1 of .menu-item) {
-                    border-radius: 0 0 10px 10px;            
-                }
-            }
+          font-weight: 300;
+          font-size: 24px;
+          line-height: 100%;
         }
 
-        &:nth-child(even of .menu-item) {
-            border-right: 2px solid black;
+        .item-image {
+          flex: 2;
+          padding: 10px;
+
+          img {
+            max-height: 300px;
+            max-width: 100%;
+            object-fit: contain;
+          }
         }
-
-        &:nth-last-child(-n + 2 of .menu-item) {
-            border-bottom: 2px solid black;
-        }
-
-        @media (max-width: 400px) {
-            border-right: 2px solid black;
-
-            // Counters the nth-last-child(-n + 2 of .menu-item) in the parent
-            &:nth-last-child(-n + 2 of .menu-item) {
-                border-bottom: unset;        
-            }   
-
-            // But we still need it for the last child
-            &:nth-last-child(1 of .menu-item) {
-                border-bottom: 2px solid black;  
-            }
-        }
-
-        .item-description{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            flex:3;
-            padding: 10px;
-            height: 100%;
-
-            font-weight: 300;
-            font-size: 24px;
-            line-height: 100%;
-        }
-
-        .item-image{
-            flex:2;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img{
-                height: auto;
-                max-width: 100%;
-                object-fit: contain;
-            }
-        }
+      }
     }
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 100%;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+
+    @media (max-width: 400px) {
+      flex-direction: column-reverse;
+    }
+
+
+    &.without-footer {
+      &:nth-last-child(2 of .menu-item) {
+        border-radius: 0 0 0 10px;
+      }
+
+      &:nth-last-child(1 of .menu-item) {
+        border-radius: 0 0 10px 0;
+      }
+
+      @media (max-width: 400px) {
+        &:nth-last-child(-n + 2 of .menu-item) {
+          border-radius: 0;
+        }
+
+        &:nth-last-child(1 of .menu-item) {
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+
+    &:nth-child(even of .menu-item) {
+      border-right: 2px solid black;
+    }
+
+    &:nth-last-child(-n + 2 of .menu-item) {
+      border-bottom: 2px solid black;
+    }
+
+    @media (max-width: 400px) {
+      border-right: 2px solid black;
+
+      // Counters the nth-last-child(-n + 2 of .menu-item) in the parent
+      &:nth-last-child(-n + 2 of .menu-item) {
+        border-bottom: unset;
+      }
+
+      // But we still need it for the last child
+      &:nth-last-child(1 of .menu-item) {
+        border-bottom: 2px solid black;
+      }
+    }
+
+    .item-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      flex: 3;
+      padding: 10px;
+      height: 100%;
+
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 100%;
+    }
+
+    .item-image {
+      flex: 2;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
 }
