@@ -6,27 +6,16 @@ export function Location() {
     <div className="location">
       <div className="description-section">
         <p>
-          <strong>We are open for pick up once a week,
-            <br />
-            on Saturdays.
-          </strong> We will send you an
-          <br />invoice once we receive your order,
-          <br />and you can e-transfer the amount due
-          <br />to confirm your order.
-          
+          <strong>We are open for pick up once a week, on Saturdays.</strong> We will send you an
+          invoice once we receive your order, and you can e-transfer the amount due to confirm your
+          order.
         </p>
-
         <p>
-          You can preorder through our form
-          <br />here. <strong>The order cut off for each week 
-            <br />is Thursday at 10AM.
-          </strong>
+          You can preorder through our form here.
+          <strong>The order cut off for each week is Thursday at 10AM.</strong>
         </p>
-
         <p>
-          If you need products for a different
-          <br /> pick up date or time, please send us
-          <br /> a message on{' '}
+          If you need products for a different pick up date or time, please send us a message on{' '}
           <a className="underline hyperlink" href="https://www.instagram.com/eni.desserts/">
             Instagram
           </a>{' '}
@@ -34,7 +23,7 @@ export function Location() {
           <a className="underline hyperlink" href="mailto:eni.desserts@gmail.com ">
             email
           </a>{' '}
-          <br />and we'll see what we can do!
+          and we'll see what we can do!
         </p>
       </div>
       <div className="map-section">
