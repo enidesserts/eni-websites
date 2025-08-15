@@ -4,9 +4,9 @@ import {AboutUs} from './aboutus/AboutUs';
 import {TopBar} from './components/TopBar';
 import {CakeFeatures} from './cakefeatures/CakeFeatures';
 import {Location} from './location/Location';
-import {CookieFeatures} from './cookiefeatures/CookieFeatures';
 import {ContactUs} from './contact/ContactUs';
 import {OrderButton} from './components/OrderButton';
+import Menu from './menu/Menu';
 
 export function Main() {
   return (
@@ -20,7 +20,7 @@ export function Main() {
       <Divider />
       <Location />
       <Divider titleElement={<div style={{color: '#EA7E42'}}>JUNE CAKE FEATURES</div>} />
-      <CookieFeatures />
+      <Menu />
       <Divider />
       <ContactUs />
       <Divider isLast />
