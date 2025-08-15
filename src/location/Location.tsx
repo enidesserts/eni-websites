@@ -4,32 +4,30 @@ export function Location() {
   return (
     // We can't use the Card component here as we want to image to be covered by the divider
     <div className="location">
-      <div className="map-section">
-        <img src="/Map.png" alt="Logo" className="logo" />
-      </div>
       <div className="description-section">
         <p>
-          Eni Desserts is open <strong>Sat & Sun</strong>
-          <br />
-          between <strong>11am-3pm</strong> at{' '}
-          <strong className="underline">417 Industrial Ave.</strong>
+          <strong>We are open for pick up once a week, on Saturdays.</strong> We will send you an
+          invoice once we receive your order, and you can e-transfer the amount due to confirm your
+          order.
         </p>
-
         <p>
-          Preorders are strongly encouraged, but we will have some selection available in store.
+          You can preorder through our form here.
+          <strong>The order cut off for each week is Thursday at 10AM.</strong>
         </p>
-
         <p>
-          Please contact us via{' '}
+          If you need products for a different pick up date or time, please send us a message on{' '}
           <a className="underline hyperlink" href="https://www.instagram.com/eni.desserts/">
-            Instagram DM
+            Instagram
           </a>{' '}
-          or{' '}
+          or an{' '}
           <a className="underline hyperlink" href="mailto:eni.desserts@gmail.com ">
             email
           </a>{' '}
-          for day-of inquiries.
+          and we'll see what we can do!
         </p>
+      </div>
+      <div className="map-section">
+        <img src="/Map.png" alt="Logo" className="logo" />
       </div>
     </div>
   );
