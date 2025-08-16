@@ -20,7 +20,6 @@
       border-radius: 10px 10px 0 0;
       border-bottom: none;
 
-      font-weight: 300;
       font-size: 45px;
       line-height: 100%;
 
@@ -29,7 +28,6 @@
 
     .footer {
       grid-column: 1 / -1; // span all columns
-      font-weight: bold;
       text-align: center;
       border: 2px solid black;
       border-top: none;
@@ -47,10 +45,6 @@
           flex: 3;
           padding: 10px;
           text-align: left;
-
-          font-weight: 300;
-          font-size: 24px;
-          line-height: 100%;
         }
 
         .item-image {
@@ -127,10 +121,6 @@
       flex: 3;
       padding: 10px;
       height: 100%;
-
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 100%;
     }
 
     .item-image {
