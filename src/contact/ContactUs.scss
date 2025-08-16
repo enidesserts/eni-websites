@@ -1,30 +1,54 @@
 .contact-us {
   display: flex;
   flex-direction: row;
-  height: 50rem;
+  padding-top: 20rem;
 
   .description-section {
     flex: 1;
-    height: 100%;
-    width: 100%;
+    padding: 0 1rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+
+    .text-section {
+      p {
+        margin-top: 0;
+      }
+    }
+
+    .icon-section {
+      display: flex;
+      flex-direction: row;
+      align-content: start;
+      height: 50px;
+
+      .oval-icon {
+        padding-right: 5px;
+        display: block;
+
+        .contact-icon-ig {
+          height: 20px;
+        }
+
+        .contact-icon-mail {
+          height: 15px;
+        }
+      }
+    }
   }
 
   .logo-section {
     flex: 2;
-    height: 100%;
     width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: end;
+
     .logo {
-      padding: 1rem;
+      height: 100%;
       width: 70%;
     }
   }
@@ -44,6 +68,10 @@
       height: 100%;
       width: 100%;
       text-align: center;
+
+      .icon-section {
+        justify-content: center;
+      }
     }
 
     .logo-section {
