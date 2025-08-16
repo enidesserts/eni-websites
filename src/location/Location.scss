@@ -23,11 +23,11 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-
     padding: 0 1rem;
 
     p {
       width: 100%;
+      color: #FFFFFF;
     }
 
     .underline {
@@ -36,7 +36,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .location {
     flex-direction: column;
     padding-top: 86px;

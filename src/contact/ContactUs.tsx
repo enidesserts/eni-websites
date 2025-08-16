@@ -20,13 +20,13 @@ export function ContactUs() {
           <a className="oval-icon" href="https://www.instagram.com/eni.desserts/">
             <Oval
               ovalFillColour="white"
-              content={<img className="contact-icon-ig" src="/Instagram.svg" />}
+              content={<img className="contact-icon-ig" src="/Instagram.svg" alt="instagram" />}
             />
           </a>
           <a className="oval-icon" href="mailto:eni.desserts@gmail.com">
             <Oval
               ovalFillColour="white"
-              content={<img className="contact-icon-mail" src="/Mail.svg" />}
+              content={<img className="contact-icon-mail" src="/Mail.svg" alt="mail" />}
             />
           </a>
         </div>

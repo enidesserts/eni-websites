@@ -10,7 +10,7 @@
 
     padding: 3rem;
 
-    @media (max-width: 400px) {
+    @media (max-width: 750px) {
       grid-template-columns: 1fr;
     }
 
@@ -76,11 +76,6 @@
     border-left: 2px solid black;
     border-top: 2px solid black;
 
-    @media (max-width: 400px) {
-      flex-direction: column-reverse;
-    }
-
-
     &.without-footer {
       &:nth-last-child(2 of .menu-item) {
         border-radius: 0 0 0 10px;
@@ -90,7 +85,7 @@
         border-radius: 0 0 10px 0;
       }
 
-      @media (max-width: 400px) {
+      @media (max-width: 750px) {
         &:nth-last-child(-n + 2 of .menu-item) {
           border-radius: 0;
         }
@@ -109,7 +104,9 @@
       border-bottom: 2px solid black;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 750px) {
+      flex-direction: column-reverse;
+      text-align: center;
       border-right: 2px solid black;
 
       // Counters the nth-last-child(-n + 2 of .menu-item) in the parent
