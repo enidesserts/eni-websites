@@ -62,13 +62,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: unset;
-    padding: 1rem;
 
     .description-section {
       flex: 1;
       height: 100%;
       width: 100%;
       text-align: center;
+      padding: 0;
 
       .icon-section {
         justify-content: center;
@@ -78,6 +78,7 @@
     .logo-section {
       justify-content: center;
       align-items: center;
+      padding: 0;
 
       .logo {
         padding: 4rem 0 0 0;
