@@ -77,7 +77,7 @@ function MenuTable({
     <div className="menu-table">
       <div className="title">{title}</div>
       {menuItems.map((item) => (
-        <MenuItem item={item} tableHasFooter={!!footer} />
+        <MenuItemCell item={item} tableHasFooter={!!footer} />
       ))}
       {footer && <div className="footer">{footer}</div>}
     </div>
@@ -87,7 +87,7 @@ function MenuTable({
 /**
  * A single entry in the menu table. It just contains a brief section for text and an image
  */
-function MenuItem({item, tableHasFooter}: {item: MenuItem; tableHasFooter?: boolean}) {
+function MenuItemCell({item, tableHasFooter}: {item: MenuItem; tableHasFooter?: boolean}) {
   return (
     <div className={`menu-item ${!tableHasFooter ? 'without-footer' : ''}`}>
       <div className="item-description">
