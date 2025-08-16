@@ -1,6 +1,13 @@
 import './Oval.scss';
 import {ReactNode} from 'react';
 
+/**
+ * An Oval svg that can take children inside and also background images
+ * @param backgroundImagePath Path to the background image
+ * @param ovalFillColour Fill colour for the oval
+ * @param content Any child components to be displayed
+ * @constructor
+ */
 export function Oval({
   backgroundImagePath,
   ovalFillColour,
