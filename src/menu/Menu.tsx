@@ -4,54 +4,84 @@ import './Menu.scss';
 type MenuItem = {
   name: string;
   price: string;
-  description: string[];
+  description: string;
   imagePath: string;
 };
 
 export default function Menu() {
-  const menuItems: MenuItem[] = [
+  const cookieMenuItems: MenuItem[] = [
     {
       name: 'Cheddar Cheese Ganache Cookie',
       price: '$4.50',
-      description: [
-        'cheese cookie with a cheese white chocolate ganache, topped with a cheese cracker',
-      ],
-      imagePath: './CheeseCookie.png',
+      description:
+        'Cheese cookie with a cheese white chocolate ganache, topped with a cheese cracker',
+
+      imagePath: './menuitems/CheddarCheeseGanacheCookie.png',
     },
     {
       name: 'Matcha Chocolate Ganache Cookie',
       price: '$4.50',
-      description: ['matcha and chocolate cookie with a matcha white chocolate ganache'],
-      imagePath: './MatchaChocolateCookie.png',
+      description: 'Matcha and chocolate cookie with a matcha white chocolate ganache',
+      imagePath: './menuitems/MatchaChocolateGanacheCookie.png',
     },
     {
       name: 'Chocolate Chip Cookie',
       price: '$3.50',
-      description: ['Your classic cookie with milk and dark chocolate chunks'],
-      imagePath: './ChocolateChipCookie.png',
+      description: 'Your classic cookie with milk and dark chocolate chunks',
+      imagePath: './menuitems/ChocolateChipCookie.png',
     },
     {
-      name: 'Chocolate Chip Cookie',
-      price: '$3.50',
-      description: ['Your classic cookie with milk and dark chocolate chunks'],
-      imagePath: './ChocolateChipCookie.png',
+      name: 'Eni Cookie Trio',
+      price: '$12',
+      description: 'Bundle the three cookies, perfect for sharing ',
+      imagePath: './menuitems/CookieTrio.png',
+    },
+  ];
+
+  const cakeMenuItems: MenuItem[] = [
+    {
+      name: 'Strawberry Earl Grey Cake Box',
+      price: '$10',
+      description:
+        'Earl grey whipped ganache, strawberry cremeux, fresh strawberries, chiffon cake',
+      imagePath: './menuitems/StrawberryEarlGreyCakeBox.png',
+    },
+    {
+      name: 'Green Grape Jasmine Cake Box',
+      price: '$10',
+      description: 'Jasmine whipped ganache, jasmine jelly, fresh grapes, chiffon cake',
+      imagePath: './menuitems/GreenGrapeJasmineCakeBox.png',
+    },
+    {
+      name: 'Mango Matcha Cake Box',
+      price: '$10',
+      description: 'Matcha whipped ganache, fresh mangoes, chiffon cake',
+      imagePath: './menuitems/MangoMatchaCakeBox.png',
+    },
+    // TODO: Update once image comes in
+    {
+      name: 'New Flavour',
+      price: '$10',
+      description: 'Super secret cake flavour',
+      imagePath: './menuitems/CookieTrio.png',
     },
   ];
 
   return (
     <Card className="menu" backgroundColour="#EFE8DF">
-      <MenuTable menuItems={menuItems} title="COOKIES" />
+      <MenuTable menuItems={cookieMenuItems} title="COOKIES" />
       <MenuTable
-        menuItems={menuItems}
+        menuItems={cakeMenuItems}
         title="CAKE BOXES"
+        // TODO: Update once image comes in
         footer={
           <div className="footer-cell">
             <div className="item-description">
-              <p>Eni Cookie Trio $12</p>
-              <p>Bundle the three cookies, perfect for sharing</p>
+              <p>Eni Cake Box Trio $?</p>
+              <p>Bundle the four cake favours, perfect for sharing </p>
             </div>
             <div className="item-image">
-              <img src="./GreenGrapeCake.png" alt="Order Now" />
+              <img src="./menuitems/CookieTrio.png" alt="Order Now" />
             </div>
           </div>
         }
@@ -97,7 +127,7 @@ function MenuItemCell({item, tableHasFooter}: {item: MenuItem; tableHasFooter?: 
         <p>{item.description}</p>
       </div>
       <div className="item-image">
-        <img src={item.imagePath} alt="Order Now" />
+        <img src={item.imagePath} alt="Menu item" />
       </div>
     </div>
   );
