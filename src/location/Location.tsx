@@ -28,6 +28,7 @@ export function Location() {
       </div>
       <a
         target="_blank"
+        rel="noreferrer"
         className="map-section"
         href="https://maps.app.goo.gl/tat81NuT6ZkK7UbC6?g_st=ipc"
       >
