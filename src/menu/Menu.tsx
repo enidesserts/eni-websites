@@ -58,12 +58,11 @@ export default function Menu() {
       description: 'Matcha whipped ganache, fresh mangoes, chiffon cake',
       imagePath: './menuitems/MangoMatchaCakeBox.png',
     },
-    // TODO: Update once image comes in
     {
-      name: 'New Flavour',
+      name: 'Lychee Genmaicha Cake Box',
       price: '$10',
-      description: 'Super secret cake flavour',
-      imagePath: './menuitems/CookieTrio.png',
+      description: 'Genmaicha whipped ganache, lychees, coconut jelly, chiffon cake',
+      imagePath: './menuitems/LycheeGenmaichaCakeBox.png',
     },
   ];
 
@@ -73,15 +72,14 @@ export default function Menu() {
       <MenuTable
         menuItems={cakeMenuItems}
         title="CAKE BOXES"
-        // TODO: Update once image comes in
         footer={
           <div className="footer-cell">
             <div className="item-description">
-              <p>Eni Cake Box Trio $?</p>
-              <p>Bundle the four cake favours, perfect for sharing </p>
+              <p>Eni Cake Box Set $35</p>
+              <p>One of each flavour </p>
             </div>
             <div className="item-image">
-              <img src="./menuitems/CookieTrio.png" alt="Order Now" />
+              <img src="./menuitems/CakeBoxSet.png" alt="Cake Box Set" />
             </div>
           </div>
         }
