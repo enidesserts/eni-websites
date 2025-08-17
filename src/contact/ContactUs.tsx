@@ -11,6 +11,7 @@ export function ContactUs() {
             Location <br />
             <a
               className="location-url"
+              rel="noreferrer"
               target="_blank"
               href="https://maps.app.goo.gl/tat81NuT6ZkK7UbC6?g_st=ipc"
             >
