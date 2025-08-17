@@ -5,6 +5,8 @@
   z-index: 999;
   cursor: pointer;
 
+  display: block;
+
   @keyframes float {
     0%,
     100% {
@@ -14,6 +16,7 @@
       transform: translateY(-8px) rotate(10deg);
     }
   }
+
   .image {
     width: 7rem;
     transform: rotate(10deg);
