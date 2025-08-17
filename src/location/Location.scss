@@ -1,7 +1,7 @@
 .location {
   display: flex;
   flex-direction: row;
-  height: 60rem;
+  height: 50rem;
   background-color: #A87FDF;
 
   .map-section {
@@ -40,5 +40,6 @@
   .location {
     flex-direction: column;
     padding-top: 86px;
+    height: 70rem;
   }
 }
