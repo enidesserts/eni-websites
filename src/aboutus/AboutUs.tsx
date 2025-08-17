@@ -20,7 +20,7 @@ export function AboutUs() {
         </p>
       </div>
       <div className="about-us-image">
-        <Oval backgroundImagePath="/Cream.jpg" />
+        <Oval backgroundImagePath="/EniTeamPic.jpg" />
       </div>
     </Card>
   );
