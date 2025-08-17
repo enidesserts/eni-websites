@@ -9,7 +9,14 @@ export function ContactUs() {
         <div className="text-section">
           <p>
             Location <br />
-            417 Industrial Ave <br />
+            <a
+              className="location-url"
+              target="_blank"
+              href="https://maps.app.goo.gl/tat81NuT6ZkK7UbC6?g_st=ipc"
+            >
+              417 Industrial Ave
+            </a>
+            <br />
             Vancouver, BC V6A 2P3
           </p>
           <p>

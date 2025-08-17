@@ -26,9 +26,13 @@ export function Location() {
           and we'll see what we can do!
         </p>
       </div>
-      <div className="map-section">
+      <a
+        target="_blank"
+        className="map-section"
+        href="https://maps.app.goo.gl/tat81NuT6ZkK7UbC6?g_st=ipc"
+      >
         <img src="/Map.png" alt="Logo" className="logo" />
-      </div>
+      </a>
     </div>
   );
 }
