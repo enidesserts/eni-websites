@@ -21,7 +21,7 @@ export function ContactUs() {
             Vancouver, BC V6A 2P3
           </p>
           <p>
-            Hours of Operation <br /> Sat & Sun: 11AM - 3PM
+            Hours of Operation <br /> Satg: 11AM - 3PM
           </p>
         </div>
         <div className="icon-section">
