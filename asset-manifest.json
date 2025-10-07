@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/eni-websites/static/css/main.f855e6bc.css",
-    "main.js": "/eni-websites/static/js/main.ff087dba.js",
-    "static/js/453.17375301.chunk.js": "/eni-websites/static/js/453.17375301.chunk.js",
-    "static/media/logo.svg": "/eni-websites/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/eni-websites/index.html",
-    "main.f855e6bc.css.map": "/eni-websites/static/css/main.f855e6bc.css.map",
-    "main.ff087dba.js.map": "/eni-websites/static/js/main.ff087dba.js.map",
-    "453.17375301.chunk.js.map": "/eni-websites/static/js/453.17375301.chunk.js.map"
+    "main.css": "/static/css/main.76851c4c.css",
+    "main.js": "/static/js/main.38925c47.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/Cream.jpg": "/static/media/Cream.cbf8660575b3550535ef.jpg",
+    "static/media/Divider.svg": "/static/media/Divider.bc26b87715e14c92dfd3.svg",
+    "index.html": "/index.html",
+    "main.76851c4c.css.map": "/static/css/main.76851c4c.css.map",
+    "main.38925c47.js.map": "/static/js/main.38925c47.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.ff087dba.js"
+    "static/css/main.76851c4c.css",
+    "static/js/main.38925c47.js"
   ]
 }
