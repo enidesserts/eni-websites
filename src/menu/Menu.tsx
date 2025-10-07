@@ -11,59 +11,34 @@ type MenuItem = {
 export default function Menu() {
   const cookieMenuItems: MenuItem[] = [
     {
-      name: 'Cheddar Cheese Ganache Cookie',
+      name: 'Ube Leche Flan',
       price: '$4.50',
-      description:
-        'Cheese cookie with a cheese white chocolate ganache, topped with a cheese cracker',
+      description: 'Ube cookie, ube halaya, leche flan',
 
-      imagePath: './menuitems/CheddarCheeseGanacheCookie.png',
+      imagePath: './menuitems/Cookie/ube_cookie.png',
     },
     {
-      name: 'Matcha Chocolate Ganache Cookie',
+      name: 'Thai Tea Ganache',
       price: '$4.50',
-      description: 'Matcha and chocolate cookie with a matcha white chocolate ganache',
-      imagePath: './menuitems/MatchaChocolateGanacheCookie.png',
-    },
-    {
-      name: 'Chocolate Chip Cookie',
-      price: '$3.50',
-      description: 'Your classic cookie with milk and dark chocolate chunks',
-      imagePath: './menuitems/ChocolateChipCookie.png',
-    },
-    {
-      name: 'Eni Cookie Trio',
-      price: '$12',
-      description: 'Bundle the three cookies, perfect for sharing ',
-      imagePath: './menuitems/CookieTrio.png',
+      description: 'Thai tea cookie, thai tea ganache',
+
+      imagePath: './menuitems/Cookie/thaitea_cookie.png',
     },
   ];
 
-  // cake menu
   const cakeMenuItems: MenuItem[] = [
     {
-      name: 'Strawberry Earl Grey Cake Box',
+      name: 'Ube Cream Cheese',
+      price: '$10',
+      description: 'Ube sponge cake, cream cheese mousse, ube whipped ganache, leche flan',
+      imagePath: './menuitems/CakeBox/ube_cakebox.png',
+    },
+    {
+      name: 'Coconut Pandan',
       price: '$10',
       description:
-        'Earl grey whipped ganache, strawberry cremeux, fresh strawberries, chiffon cake',
-      imagePath: './menuitems/StrawberryEarlGreyCakeBox.png',
-    },
-    {
-      name: 'Green Grape Jasmine Cake Box',
-      price: '$10',
-      description: 'Jasmine whipped ganache, jasmine jelly, fresh grapes, chiffon cake',
-      imagePath: './menuitems/GreenGrapeJasmineCakeBox.png',
-    },
-    {
-      name: 'Mango Matcha Cake Box',
-      price: '$10',
-      description: 'Matcha whipped ganache, fresh mangoes, chiffon cake',
-      imagePath: './menuitems/MangoMatchaCakeBox.png',
-    },
-    {
-      name: 'Lychee Genmaicha Cake Box',
-      price: '$10',
-      description: 'Genmaicha whipped ganache, lychees, coconut jelly, chiffon cake',
-      imagePath: './menuitems/LycheeGenmaichaCakeBox.png',
+        'Pandan sponge cake, coconut whipped ganache, macapuno strings, pandan jellies, toasted coconut',
+      imagePath: './menuitems/CakeBox/pandan_cakebox.png',
     },
   ];
 
