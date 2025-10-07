@@ -11,67 +11,62 @@ type MenuItem = {
 export default function Menu() {
   const cookieMenuItems: MenuItem[] = [
     {
-      name: 'Cheddar Cheese Ganache Cookie',
+      name: 'Ube Leche Flan',
       price: '$4.50',
       description:
-        'Cheese cookie with a cheese white chocolate ganache, topped with a cheese cracker',
+        'Ube cookie, ube halaya, leche flan',
 
-      imagePath: './menuitems/CheddarCheeseGanacheCookie.png',
+      imagePath: './menuitems/Cookie/ube_cookie.png',
     },
     {
-      name: 'Matcha Chocolate Ganache Cookie',
+      name: 'Thai Tea Ganache',
       price: '$4.50',
-      description: 'Matcha and chocolate cookie with a matcha white chocolate ganache',
-      imagePath: './menuitems/MatchaChocolateGanacheCookie.png',
+      description:
+        'Thai tea cookie, thai tea ganache',
+
+      imagePath: './menuitems/Cookie/thaitea_cookie.png',
+    },
+  ];
+
+    const madeleineMenuItems: MenuItem[] = [
+    {
+      name: 'Pineapple & Kaya Jam',
+      price: '$3.00',
+      description:
+        'Pineapple madeleine filled with a shot of kaya jam',
+
+      imagePath: './menuitems/Madeleine/kayapineapple_madeleine.png',
     },
     {
-      name: 'Chocolate Chip Cookie',
-      price: '$3.50',
-      description: 'Your classic cookie with milk and dark chocolate chunks',
-      imagePath: './menuitems/ChocolateChipCookie.png',
-    },
-    {
-      name: 'Eni Cookie Trio',
-      price: '$12',
-      description: 'Bundle the three cookies, perfect for sharing ',
-      imagePath: './menuitems/CookieTrio.png',
+      name: 'Vietnamese Coffee',
+      price: '$3.00',
+      description: 'Coffee madeleine',
+      imagePath: './menuitems/Madeleine/vietcoffee_madeleine.png',
     },
   ];
 
   const cakeMenuItems: MenuItem[] = [
     {
-      name: 'Strawberry Earl Grey Cake Box',
+      name: 'Ube Cream Cheese',
       price: '$10',
       description:
-        'Earl grey whipped ganache, strawberry cremeux, fresh strawberries, chiffon cake',
-      imagePath: './menuitems/StrawberryEarlGreyCakeBox.png',
+        'Ube sponge cake, cream cheese mousse, ube whipped ganache, leche flan',
+      imagePath: './menuitems/CakeBox/ube_cakebox.png',
     },
     {
-      name: 'Green Grape Jasmine Cake Box',
+      name: 'Coconut Pandan',
       price: '$10',
-      description: 'Jasmine whipped ganache, jasmine jelly, fresh grapes, chiffon cake',
-      imagePath: './menuitems/GreenGrapeJasmineCakeBox.png',
-    },
-    {
-      name: 'Mango Matcha Cake Box',
-      price: '$10',
-      description: 'Matcha whipped ganache, fresh mangoes, chiffon cake',
-      imagePath: './menuitems/MangoMatchaCakeBox.png',
-    },
-    {
-      name: 'Lychee Genmaicha Cake Box',
-      price: '$10',
-      description: 'Genmaicha whipped ganache, lychees, coconut jelly, chiffon cake',
-      imagePath: './menuitems/LycheeGenmaichaCakeBox.png',
+      description: 'Pandan sponge cake, coconut whipped ganache, macapuno strings, pandan jellies, toasted coconut',
+      imagePath: './menuitems/CakeBox/pandan_cakebox.png',
     },
   ];
 
   return (
     <Card className="menu" backgroundColour="#EFE8DF">
       <MenuTable menuItems={cookieMenuItems} title="COOKIES" />
-      <MenuTable
-        menuItems={cakeMenuItems}
-        title="CAKE BOXES"
+      <MenuTable menuItems={madeleineMenuItems} title="MADELEINE" />
+      <MenuTable menuItems={cakeMenuItems} title="CAKE BOXES"
+        /*
         footer={
           <div className="footer-cell">
             <div className="item-description">
@@ -83,6 +78,7 @@ export default function Menu() {
             </div>
           </div>
         }
+        */
       />
     </Card>
   );
