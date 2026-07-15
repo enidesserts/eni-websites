@@ -64,22 +64,7 @@ export default function Menu() {
   return (
     <Card className="menu" backgroundColour="#EFE8DF">
       <MenuTable menuItems={cookieMenuItems} title="COOKIES" />
-      <MenuTable menuItems={madeleineMenuItems} title="MADELEINE" />
-      <MenuTable menuItems={cakeMenuItems} title="CAKE BOXES"
-        /*
-        footer={
-          <div className="footer-cell">
-            <div className="item-description">
-              <p>Eni Cake Box Set $35</p>
-              <p>One of each flavour </p>
-            </div>
-            <div className="item-image">
-              <img src="./menuitems/CakeBoxSet.png" alt="Cake Box Set" />
-            </div>
-          </div>
-        }
-        */
-      />
+      <MenuTable menuItems={cakeMenuItems} title="CAKE BOXES" />
     </Card>
   );
 }
