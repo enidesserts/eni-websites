@@ -20,7 +20,7 @@ export function AboutUs() {
         </div>
       </div>
       <div className="photo-section">
-        <img src="/EniTeamPic.jpg" className="logo" />
+        <img src="/EniTeamPic.jpg" alt="team-pic" className="logo" />
       </div>
     </div>
   );

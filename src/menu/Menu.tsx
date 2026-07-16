@@ -38,6 +38,7 @@ export default function Menu() {
     },
   ];
 
+  // cake menu
   const cakeMenuItems: MenuItem[] = [
     {
       name: 'Strawberry Earl Grey Cake Box',
