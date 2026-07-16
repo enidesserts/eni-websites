@@ -1,6 +1,4 @@
-import {Card} from '../components/Card';
 import './AboutUs.scss';
-import {Oval} from '../components/Oval';
 
 export function AboutUs() {
   return (
@@ -22,7 +20,7 @@ export function AboutUs() {
         </div>
       </div>
       <div className="photo-section">
-        <img src="/EniTeamPic.jpg" alt="Team picture" className="logo" />
+        <img src="/EniTeamPic.jpg" className="logo" />
       </div>
     </div>
   );
